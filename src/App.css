@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+/* HomePage.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f9fc;
+  color: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .header {
+  background: white;
+  padding: 20px 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3366ff;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.browse-btn {
+  background-color: #3366ff;
   color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: #e9f0ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-text {
+  max-width: 50%;
 }
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  font-size: 100px;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.course-grid, .offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+.course-card, .offer-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.course-card h3, .offer-item h4 {
+  margin-top: 0;
+  color: #3366ff;
+}
+
+.enroll-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #3366ff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #eef3f9;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-section a {
+  display: block;
+  text-decoration: none;
+  color: #3366ff;
+  margin-bottom: 5px;
+} */

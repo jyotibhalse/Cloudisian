@@ -1,8 +1,10 @@
 import React from 'react';
 import './footer.css';
-
+import Pop from '../PopUp/pop';
 const Footer = () => {
   return (
+    <>
+    <Pop/>
     <footer className="footer">
       <div className="footer-section">
         <h5>About</h5>
@@ -10,7 +12,7 @@ const Footer = () => {
       </div>
       <div className="footer-section">
         <h5>Contact</h5>
-        <p>info@cloudasian.com</p>
+        <p>info@cloudisian.com</p>
       </div>
       <div className="footer-section">
         <h5>Follow Us</h5>
@@ -19,6 +21,7 @@ const Footer = () => {
         <a href="/">LinkedIn</a>
       </div>
     </footer>
+    </>
   );
 };
 

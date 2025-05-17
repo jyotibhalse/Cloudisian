@@ -1,0 +1,214 @@
+.events-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 110px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.events-heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  text-shadow:
+   0 0 6px rgba(255, 65, 108, 0.6),
+  0 0 12px rgba(255, 75, 43, 0.5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: rotate3D 3s ease-in-out infinite alternate;
+  transform-style: preserve-3d;
+}
+
+/* 3D Rotation Animation */
+@keyframes rotate3D {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(10deg) rotateY(15deg);
+  }
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #ddd;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Event List Grid */
+.event-list {
+  display:flow-root;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .event-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Event Card */
+.event-card {
+  border: 1px solid #ccc;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #fafafa;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+  margin-top: 10px;
+}
+
+.event-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Fade-in animation for event cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Event Card Heading and Meta */
+.event-card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.event-meta {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.audience {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Event Image with hover zoom */
+.event-img {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-img {
+  transform: scale(1.02);
+}
+
+/* Job Details */
+.job-details {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Open Roles List */
+.open-roles {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.open-roles li {
+  list-style: disc;
+  margin-bottom: 4px;
+}
+
+/* Buttons Container */
+.event-buttons {
+  margin-top: 15px;
+  gap: 10px;
+  display: flex;       /* Add this */
+  flex-wrap: wrap;
+  justify-content: center;  /* optional */
+}
+.event-img.large {
+  height: 400px; /* bigger height for featured event */
+}
+
+/* Register and Map Links */
+.register-link,
+.map-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0a6ebd;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.register-link:hover,
+.map-link:hover {
+  background-color: #084c8d;
+}
+
+/* Accordion toggle for job details on small screens */
+@media (max-width: 767px) {
+  .job-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+  .job-details.active {
+    max-height: 1000px; /* enough for content */
+  }
+  
+  /* Toggle button */
+  .accordion-toggle {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: fit-content;
+    user-select: none;
+  }
+}

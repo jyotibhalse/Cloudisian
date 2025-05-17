@@ -1,0 +1,137 @@
+/* Container */
+.career-container {
+  padding: 110px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.intro p {
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+/* Section Shared Style */
+.section {
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0f172a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Trending Careers Container */
+.trending-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.trending-tag {
+  background-color: #dbeafe;
+  color: #1e40af;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.trending-tag:hover {
+  background-color: #bfdbfe;
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* Career Planning Checklist */
+.checklist {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.checklist li {
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.checklist li:hover {
+  transform: translateX(5px);
+  color: #2563eb;
+}
+
+/* Call to Action Section */
+.cta {
+  /* background: linear-gradient(135deg, #2563eb, #1e3a8a); */
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
+}
+
+.cta-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* CTA Button */
+.cta-button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #c9a928;
+  color: #1e293b;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #fde047;
+  transform: scale(1.05);
+}
+
+/* Responsive Typography */
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

@@ -17,8 +17,6 @@ const pages = [
   { name: "CSR & NGO", path: "/ngo" },
   { name: "courses", path: "/training" },
   { name: "python", path: "/coaching" },
-  { name: "jobs", path: "/recruitments" },
-  { name: "workshop", path: "/events" },
   
 ];
 

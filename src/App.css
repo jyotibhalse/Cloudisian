@@ -1,123 +1,13 @@
-/* HomePage.css */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f7f9fc;
-  color: #222;
+margin: 0;
+font-family: 'mandona';
+background: linear-gradient(to bottom, #ffffff 0%, #d4e6f9 30%, #57a9e9 100%);
+background-attachment: fixed;
+background-size: cover;
+color: #2c3e50;
+min-height: 100vh;
 }
 
-/* .header {
-  background: white;
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eaeaea;
+.App {
+text-align: center;
 }
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #3366ff;
-}
-
-.nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-}
-
-.browse-btn {
-  background-color: #3366ff;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 40px;
-  background: #e9f0ff;
-}
-
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.hero-image {
-  font-size: 100px;
-}
-
-.section-title {
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.course-grid, .offer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  padding: 0 40px 40px;
-}
-
-.course-card, .offer-item {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.course-card h3, .offer-item h4 {
-  margin-top: 0;
-  color: #3366ff;
-}
-
-.enroll-btn {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #3366ff;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
-.footer {
-  background-color: #eef3f9;
-  padding: 30px 40px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
-}
-
-.footer-section h5 {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.footer-section a {
-  display: block;
-  text-decoration: none;
-  color: #3366ff;
-  margin-bottom: 5px;
-} */

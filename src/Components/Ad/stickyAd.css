@@ -1,0 +1,123 @@
+.sticky-ad {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #00ffe7, #5c00ff);
+  padding: 18px 28px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px #ffb800; /* warm golden glow */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  animation: shakeIn 0.8s ease;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid #ffb80088; /* translucent golden border */
+  backdrop-filter: blur(6px);
+  max-width: 320px;
+}
+
+@keyframes shakeIn {
+  0% { transform: translateY(40px) scale(0.9); opacity: 0; }
+  50% { transform: translateY(-5px) scale(1.05); opacity: 0.9; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.ad-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.emoji {
+  font-size: 1.8rem;
+  animation: float 1.5s infinite ease-in-out;
+  color: #ffb800; /* golden color for emoji */
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.count {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffb800; /* golden highlight for count */
+  text-shadow: 0 0 6px #ffb800, 0 0 12px #ffb800;
+  animation: pulseHighlight 1s ease-in-out infinite;
+}
+
+@keyframes pulseHighlight {
+  0%, 100% {
+    transform: scale(1);
+    color: #ffb800;
+    text-shadow: 0 0 6px #ffb800, 0 0 12px #ffb800;
+  }
+  50% {
+    transform: scale(1.15);
+    color: #ffd84c; /* lighter gold */
+    text-shadow: 0 0 15px #ffd84c, 0 0 25px #ffd84c;
+  }
+}
+
+.text {
+  font-weight: 500;
+  color: white; /* dark warm brown */
+  animation: fadeSlideIn 1.2s ease forwards;
+  opacity: 0;
+  max-width: 200px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #fff176; /* bright yellow highlight */
+  text-shadow: 0 0 8px #fff176, 0 0 20px #fff176;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.animated-text {
+  display: block;
+  font-style: italic;
+  margin-top: 4px;
+  color: #fff9c4; /* pale yellow */
+  animation: fadeSlideIn 2s ease forwards 0.6s;
+  opacity: 0;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 8px #fff176, 0 0 20px #fff176;
+    color: #fff176;
+  }
+  50% {
+    text-shadow: 0 0 15px #fff9c4, 0 0 25px #fff9c4;
+    color: #fff9c4;
+  }
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #663c00; /* dark warm brown for close button */
+  font-size: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.close-btn:hover {
+  transform: scale(1.2);
+  color: #ffb800; /* golden highlight on hover */
+}

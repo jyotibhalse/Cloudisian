@@ -1,6 +1,9 @@
 import React from "react";
 import "./Cards.css";
-
+import Webpage from '../../Images/web.png';
+import Upload from '../../Images/upload.png';
+import Appprogramming from '../../Images/app-programming.png';
+import Reseller from '../../Images/reseller.png';
 const HomePage = () => {
   return (
     <div>
@@ -9,7 +12,7 @@ const HomePage = () => {
         <div className="course-card">
           <div className="course-header">
             <img
-              src="./web.png"
+              src={Webpage}
               alt="Web Development"
               className="course-img"
             />
@@ -24,7 +27,7 @@ const HomePage = () => {
         </div>
         <div className="course-card">
           <div className="course-header">
-            <img src="./upload.png" alt="Data analytics" className="course-img" />
+            <img src={Upload} alt="Data analytics" className="course-img" />
             <h3>Data analytics</h3>
             </div>
             <p>steve smith</p>
@@ -36,7 +39,7 @@ const HomePage = () => {
         </div>
         <div className="course-card">
           <div className="course-header">
-            <img src="./app-programming.png" alt="Moblie" className="course-img" />
+            <img src={Appprogramming} alt="Moblie" className="course-img" />
             <h3>Moblie</h3>
             </div>
             <p>Alice Johnson</p>
@@ -49,7 +52,7 @@ const HomePage = () => {
         <div className="course-card">
           <div className="course-header">
             <img
-              src="./reseller.png"
+              src={Reseller}
               alt="Quantum"
               className="course-img"
             />

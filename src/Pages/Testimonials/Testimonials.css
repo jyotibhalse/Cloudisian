@@ -1,0 +1,85 @@
+.testimonial-container {
+  margin: auto;
+  padding: 120px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.testimonial-title {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.testimonial-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Base style: default 1 card per row */
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%; /* full width by default */
+  max-width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.testimonial-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-message {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.testimonial-role {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Responsive Breakpoints */
+
+/* Medium screens: 2 cards per row */
+@media (min-width: 600px) {
+  .testimonial-card {
+    flex: 1 1 calc(50% - 20px); /* Two cards with gap */
+    max-width: none;
+  }
+}
+
+/* Large screens: 3 cards per row */
+@media (min-width: 992px) {
+  .testimonial-card {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+/* Extra large screens: 4 cards per row */
+@media (min-width: 1200px) {
+  .testimonial-card {
+    flex: 1 1 calc(25% - 20px);
+  }
+}

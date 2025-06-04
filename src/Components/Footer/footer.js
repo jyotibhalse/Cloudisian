@@ -14,6 +14,7 @@ const Footer = () => {
       <div className="footer-section">
         <h5>Contact</h5>
         <p>info@cloudisian.com</p>
+        <p><a href='/contact'>ContactUs</a></p>
         
       </div>
       <div className="footer-section">

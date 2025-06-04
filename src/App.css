@@ -1,7 +1,8 @@
 body {
 margin: 0;
-font-family: 'mandona';
-background: linear-gradient(to bottom, #ffffff 0%, #d4e6f9 30%, #57a9e9 100%);
+font-family: 'Verdana';
+/* font-family: sans-serif; */
+background: linear-gradient(to bottom, #ffffff 0%, #d4e6f9 30%, #bfdbf0 100%);
 background-attachment: fixed;
 background-size: cover;
 color: #2c3e50;

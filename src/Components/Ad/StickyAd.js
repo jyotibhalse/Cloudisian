@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./stickyAd.css";
 
 const StickyAd = () => {
-  const [count, setCount] = useState(200);
+  const [count, setCount] = useState(1000);
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {

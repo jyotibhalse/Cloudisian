@@ -28,7 +28,6 @@ function Popup() {
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/KBR_%28company%29_logo.svg/1200px-KBR_%28company%29_logo.svg.png" alt="Wipro" />
             <img src="https://www.aljaberqatar.com/wp-content/uploads/2023/08/aljaber-logo-original-2048x699.png" alt="Accenture" />
             <img src="https://www.emiratessteelllc.com/uploaded_files/userfiles/images/SNS-logo.png" alt="HCL" />
-            <img src="" alt="IBM" />
             {/* duplicated for infinite scroll */}
             <img src="https://www.clipartmax.com/png/middle/423-4235248_partners-katerra-construction-logo.png" alt="TCS" />
             <img src="https://c0.klipartz.com/pngpicture/272/718/gratis-png-al-rajhi-banco-negocio-rajhi-industria-del-acero-negocios.png" alt="Infosys" />
@@ -70,3 +69,5 @@ function Popup() {
 }
 
 export default Popup;
+
+

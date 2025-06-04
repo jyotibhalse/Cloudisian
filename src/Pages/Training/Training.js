@@ -1,22 +1,81 @@
 import React from 'react';
 import './Training.css';
-import Web from '../../Images/img18.jpg'
-import Frontend from '../../Images/frontend.jpg'
+import Web from '../../Images/img18.jpg';
+import Frontend from '../../Images/frontend.jpg';
 import Backend from '../../Images/AIWebinar.jpg';
-import Remote from '../../Images/img20.jpg'
-import Digital from '../../Images/img7.jpg'
+import Remote from '../../Images/img20.jpg';
+import Digital from '../../Images/img7.jpg';
 import UI from '../../Images/img10.jpg';
-import Data from '../../Images/img11.jpg'
-import Android from '../../Images/img9.jpg'
-import AI from '../../Images/img16.jpg'
-import Frontend1 from '../../Images/img8.jpg'
-import Node from '../../Images/node.jpg'
-import Remote1 from '../../Images/img14.jpg'
-import Web1 from '../../Images/Hackathon.jpg'
-import Backend1 from '../../Images/img17.jpg'
-import AI1 from '../../Images/cd5.jpg'
+import Data from '../../Images/img11.jpg';
+import Android from '../../Images/img9.jpg';
+import AI from '../../Images/img16.jpg';
+import Frontend1 from '../../Images/img8.jpg';
+import Node from '../../Images/node.jpg';
+import Remote1 from '../../Images/img14.jpg';
+import Web1 from '../../Images/Hackathon.jpg';
+import Backend1 from '../../Images/img17.jpg';
+import AI1 from '../../Images/cd5.jpg';
+import Form from '../../Components/Form/form';
 
 const TrainingPage = () => {
+
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   course: "",
+  //   message: "",
+    
+  // });
+  // const [loading, setLoading] = useState(false);
+  // const [feedback, setFeedback] = useState("");
+
+  // const handleChange = (e) => {
+  //   const { name, value, } = e.target;
+    
+  //     setFormData((prev) => ({ ...prev, [name]: value }));
+    
+  // };
+
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+    // Basic client-side validation
+  //   if (!formData.name.trim() || !formData.email.trim()) {
+  //     setFeedback("❌ Name and Email are required.");
+  //     return;
+  //   }
+
+  //   setLoading(true);
+  //   setFeedback("");
+
+    
+  //   try {
+  //     const response = await fetch("https://cloudisian.net/inquiry", {
+  //       method: "POST",
+  //        headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
+
+  //     if (!response.ok) throw new Error("Network response was not ok");
+
+  //     setFeedback("✅ Inquiry submitted successfully!");
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       course: "",
+  //       message: "",
+        
+  //     });
+  //   } catch (error) {
+  //     setFeedback("❌ Failed to submit. Please try again.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const individualTrainings = [
   {
     title: "Full Stack Web Development",
@@ -175,7 +234,7 @@ const corporateTrainings = [
           loop
           playsInline
         >
-          <source src="./videos/cd4.mp4" type="video/mp4" />
+          <source src="/videos/cd4.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="tp-hero-content">
@@ -220,18 +279,49 @@ const corporateTrainings = [
       </section>
 
       {/* Inquiry Form */}
-      <section className="tp-inquiry-section">
+      {/* <section className="tp-inquiry-section">
         <div className="tp-inquiry-container">
           <h2 className="tp-heading">📩 Quick Inquiry</h2>
-          <form className="tp-inquiry-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <input type="text" placeholder="Interested Course / Training" />
-            <textarea rows="4" placeholder="Your Message"></textarea>
-            <button type="submit" className="tp-submit-btn">Submit Inquiry</button>
-          </form>
+          <form className="tp-inquiry-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="course"
+            placeholder="Interested Course / Training"
+            value={formData.course}
+            onChange={handleChange}
+          />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+          
+          <button type="submit" className="tp-submit-btn" disabled={loading}>
+            {loading ? "Submitting..." : "Submit Inquiry"}
+          </button>
+          {feedback && <p style={{ marginTop: "10px", color: feedback.includes("✅") ? "green" : "red" }}>{feedback}</p>}
+        </form>
         </div>
-      </section>
+      </section> */}
+     <Form/>
     </div>
   );
 };

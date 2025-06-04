@@ -199,7 +199,7 @@ const CoursesPage = () => {
 
       <div className="video-banner">
   <video autoPlay muted loop playsInline>
-    <source src="./videos/vd4.mp4" type="video/mp4" />
+    <source src="/videos/vd4.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
